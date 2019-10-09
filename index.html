@@ -4,30 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aloha Store</title>
+    <link rel="stylesheet" href="meyer-reset.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
-        <div class="logo-header">
-            <img src="" alt="logo">
-        </div>
+    <main>
+    <header class="top-bar">
+        <img id="logo" src="images/aloha-logo.svg" alt="logo">
         <nav>
-            <ul>
-                <li>About</li>
-                <li>Shop</li>
-                <li>Featured</li>
-                <li>Updates</li>
-            </ul>
+            <a href="/html/">About</a>
+            <a href="/css/">Shop</a> 
+            <a href="/js/">Featured</a> 
+            <a href="/jquery/">Updates</a>
         </nav>
-        <div class="shopping-cart">
-            <img src="" alt="cart">
-        </div>
+        <img class="shopping-cart" src="images/cart-icon.svg" alt="cart">
     </header>
-    <section>
-        <img src="" alt="women-holding-coat">
-        <h1>New Colection Sprint/ Summer 2016</h1>
+    <section class="section-banner-girl">
+        <figure class="banner">
+            <img id="bkg-flower" src="images/flower-bkgd.jpg" alt="background-flowers">
+            <img id="banner-girl" src="images/banner-girl.png" alt="women-holding-coat">
+            <h1 class="banner-text">New Colection <br> Sprint/ Summer 2016</h1>
+        </figure>
     </section>
-    <section>
+    <!-- <section>
         <h2>Hand-Crafted Styles</h2>
         <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
     </section>
@@ -79,8 +78,11 @@
                 <li>Google +</li>
             </ul>
         </div>
-    </footer>
+    </footer> -->
+    </main>
+    
     <script type="text/javascript" src="https://code.jquery.com/jquery-git.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    
   </body>
 </html>

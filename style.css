@@ -1,12 +1,70 @@
-*{
-    border: solid;
+main{
+    max-width: 1240px;
     margin: 0 auto;
 }
 
-body{
-    max-width: 1240px;
+/* Top Menu */
+header{
+    height: 100px;
+    width: 100%;
+    float: left;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    align-items: center;
+    justify-items: center;
 }
 
-section{
-    border-color: red;
+#logo{
+    height: 60px;
+}
+
+nav a{
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    color: black;
+}
+
+.shopping-cart{
+    height: 40px;
+    grid-column-start: 3;
+}
+
+/* First Section - Banner Girl */
+.section-banner-girl{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 25% 100% 25%;
+    grid-template-rows: 802px;
+    align-items: center;
+    justify-items: center;
+}
+
+figure{
+    grid-column-start: 1;
+}
+
+#bkg-flower{
+    grid-column-start: 1;
+    width: 100%;
+    position: relative;
+}
+
+#banner-girl{
+    grid-column-start: 1;
+    position: absolute;
+    top: 190px;
+    left: 35%;
+    width: 30%;
+}
+
+.banner-text{
+    grid-column-start: 1;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    text-align: center;
+    color: white;
+    font-size: 50px;
 }
