@@ -1,4 +1,12 @@
-body{
+*{
+    border: solid;
     margin: 0 auto;
+}
+
+body{
     max-width: 1240px;
+}
+
+section{
+    border-color: red;
 }
