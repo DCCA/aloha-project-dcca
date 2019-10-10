@@ -1,1 +1,11 @@
 How do I apply overflow to pictures?
+
+picture for html tag
+backgorund-image fill the space
+    - size: cover
+
+main
+- nav
+- header
+- - picture - position: relative
+- - h1 - position: relative
