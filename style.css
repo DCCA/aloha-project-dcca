@@ -1,5 +1,7 @@
 main{
     max-width: 1240px;
+    min-width: 768px;
+    height: 3030px;
     margin: 0 auto;
     font-size: 16px;
     font-family: "Raleway Light";
@@ -33,7 +35,7 @@ p{
 
 /* Top Menu */
 nav{
-    height: 100px;
+    height: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,7 +76,7 @@ a{
 /* First Section - Banner Girl */
 .section-banner-girl{
     background-image: url("images/flower-bkgd.jpg");
-    height: 600px;
+    height: 20%;
     display: flex;
     overflow: hidden;
     align-items: center;
@@ -82,7 +84,16 @@ a{
     position: relative;
 }
 
-picture{
+.layer {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.text-banner{
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -91,25 +102,25 @@ picture{
 }
 
 .banner-girl{
-    height: 95%;
+    height: 90%;
     align-self: flex-end;
 }
 
-picture p, h1{
+.text-banner p, h1{
     color: white;
     z-index: 1;
 }
 
-picture p{
+.text-banner p{
     font-size: 30px;
 }
 
-picture h1{
+.text-banner h1{
     font-family: "Playfair Display";
 }
 
 .section-first-call{
-    height: 250px;
+    height: 9%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,7 +140,7 @@ picture h1{
 
 /* Third section */
 .section-category{
-    height: 600px;
+    height: 20%;
     display: flex;
     align-items: stretch;
     flex-direction: row;
@@ -186,7 +197,7 @@ picture h1{
 
 /* Card Section */
 .section-cards{
-    height: 700px;
+    height: 22%;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -227,14 +238,15 @@ picture h1{
 
 /* Sign Up Section */
 .section-sign-up{
-    height: 400px;
+    height: 17%;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    background: url("images/wave-bkgd.jpg") no-repeat center center fixed;
+    background: url("images/wave-bkgd.jpg");
     background-size: cover;
-    background-position-y: center;
+    /* background-position-y: center; */
+    background-position: bottom;
 }
 
 .section-sign-up h2{
@@ -274,7 +286,7 @@ input:focus{
     border: solid white;
     background-color: #e2574c;
     font-family: "Raleway Light";
-    font-style: bold;
+    font-weight: bold;
     color: white;
     text-align: center;
 }
@@ -309,3 +321,16 @@ footer .basic-info p:nth-of-type(4){
 footer .social-links{
     font-family: "Raleway Light";
 }
+
+/* Responsividade */
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+@media only screen and (min-width: 600px) {
+    body {
+      background-color: red;
+    }
+  }

@@ -9,3 +9,6 @@ main
 - header
 - - picture - position: relative
 - - h1 - position: relative
+
+Size of fonts: rem
+- Melhor usar o REM junto com um reset e ai você pode definir o valor de um REM
