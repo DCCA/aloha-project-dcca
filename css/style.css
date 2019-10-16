@@ -75,7 +75,8 @@ a{
 
 /* First Section - Banner Girl */
 .section-banner-girl{
-    background-image: url("images/flower-bkgd.jpg");
+    background-image: url("images/flower-bkgd.jpg"), 
+    url("file:///Users/danielandrade/Documents/Curso%20Coding/Projetos/aloha-project-dcca/images/flower-bkgd.jpg");
     height: 20%;
     display: flex;
     overflow: hidden;
@@ -165,33 +166,39 @@ a{
 
 .section-category p:nth-child(1){
     width: 50%;
-    background-image: url("images/mens-category.jpg");
+    background-image: url("images/mens-category.jpg"),
+    url("file:///Users/danielandrade/Documents/Curso%20Coding/Projetos/aloha-project-dcca/images/mens-category.jpg");
     background-size: 100%;
 }
 
 .section-category p:nth-child(2){
-    background-image: url("images/trends-category.jpg");
+    background-image: url("images/trends-category.jpg"),
+    url("file:///Users/danielandrade/Documents/Curso%20Coding/Projetos/aloha-project-dcca/images/trends-category.jpg");
     background-size: 100%;
 }
 
 .section-category p:nth-child(3){
-    background-image: url("images/glasses-category.jpg");
+    background-image: url("images/glasses-category.jpg"),
+    url("file:///Users/danielandrade/Documents/Curso%20Coding/Projetos/aloha-project-dcca/images/glasses-category.jpg");
     background-size: 100%;
 }
 
 .section-category p:nth-child(4){
-    background-image: url("images/sale-category.jpg");
+    background-image: url("images/sale-category.jpg"),
+    url("file:///Users/danielandrade/Documents/Curso%20Coding/Projetos/aloha-project-dcca/images/sale-category.jpg");
     background-size: 100%;
 }
 
 .section-category p:nth-child(5){
-    background-image: url("images/bags-category.jpg");
+    background-image: url("images/bags-category.jpg"),
+    url("file:///Users/danielandrade/Documents/Curso%20Coding/Projetos/aloha-project-dcca/images/bags-category.jpg");
     background-size: 100%;
 }
 
 .section-category p:nth-child(6){
     width: 50%;
-    background-image: url("images/womens-category.jpg");
+    background-image: url("images/womens-category.jpg"),
+    url("file:///Users/danielandrade/Documents/Curso%20Coding/Projetos/aloha-project-dcca/images/womens-category.jpg");
     background-size: 100%;
 }
 
@@ -211,19 +218,24 @@ a{
 }
 
 .section-cards .carousel{
-    width: 100%;
+    position: relative;
+}
+
+.section-cards .carousel .card-container{
+    width: 200%;
     display: flex;
     flex-flow: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .section-cards .card{
-    width: 25%;
+    width: 100%;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .section-cards .card:hover{
@@ -243,7 +255,8 @@ a{
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    background: url("images/wave-bkgd.jpg");
+    background: url("/images/wave-bkgd.jpg"),
+    url("file:///Users/danielandrade/Documents/Curso%20Coding/Projetos/aloha-project-dcca/images/wave-bkgd.jpg");
     background-size: cover;
     /* background-position-y: center; */
     background-position: bottom;
@@ -325,12 +338,12 @@ footer .social-links{
 /* Responsividade */
 @media only screen and (max-width: 600px) {
     body {
-      background-color: lightblue;
+      background-color: ;
     }
   }
 
 @media only screen and (min-width: 600px) {
     body {
-      background-color: red;
+      background-color: ;
     }
   }
