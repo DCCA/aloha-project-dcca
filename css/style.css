@@ -227,6 +227,7 @@ a{
     flex-flow: row;
     align-items: center;
     justify-content: flex-start;
+    /* Use Align-self for this. Is better */
 }
 
 .section-cards .card{
