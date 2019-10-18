@@ -1,5 +1,4 @@
 main{
-    min-width: 375px;
     max-width: 1240px;
     height: 3030px;
     margin: 0 auto;
@@ -39,35 +38,24 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-nav ul{
-    order: 3;
-    width: 100%;
-    border-top: 0.5rem black;
-    margin: 0 8%;
-    font-size: 0.8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    flex-wrap: nowrap;
 }
 
 nav li{
     float: left;
-    /* width: 25%; */
+    width: 100px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 #logo{
     height: 40%;
-    width: 25%;
-    margin-left: 8%;
+    /* margin-right: auto; */
+    margin-left: 5%;
 }
 
 a{
+    width: 100px;
+    display: inline-block;
     text-align: center;
     color: #e2574c;
     text-decoration: none;
@@ -75,13 +63,13 @@ a{
 
 .shopping-cart{
     height: 40%;
-    width: 20%;
-    margin-right: 5%;
+    margin-right: 8%;
 }
 
 /* First Section - Banner Girl */
 .section-banner-girl{
-    background-image: url("../images/flower-bkgd.jpg");
+    background-image: url("images/flower-bkgd.jpg"), 
+    url("file:///Users/danielandrade/Documents/Curso%20Coding/Projetos/aloha-project-dcca/images/flower-bkgd.jpg");
     height: 20%;
     display: flex;
     overflow: hidden;
@@ -104,8 +92,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;  
-    text-align: center; 
+    justify-content: center;    
 }
 
 .banner-girl{
@@ -172,38 +159,44 @@ a{
 
 .section-category p:nth-child(1){
     width: 50%;
-    background-image: url("../images/mens-category.jpg");
+    background-image: url("images/mens-category.jpg"),
+    url("file:///Users/danielandrade/Documents/Curso%20Coding/Projetos/aloha-project-dcca/images/mens-category.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .section-category p:nth-child(2){
-    background-image: url("../images/trends-category.jpg");
+    background-image: url("images/trends-category.jpg"),
+    url("file:///Users/danielandrade/Documents/Curso%20Coding/Projetos/aloha-project-dcca/images/trends-category.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .section-category p:nth-child(3){
-    background-image: url("../images/glasses-category.jpg");
+    background-image: url("images/glasses-category.jpg"),
+    url("file:///Users/danielandrade/Documents/Curso%20Coding/Projetos/aloha-project-dcca/images/glasses-category.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .section-category p:nth-child(4){
-    background-image: url("../images/sale-category.jpg");
+    background-image: url("images/sale-category.jpg"),
+    url("file:///Users/danielandrade/Documents/Curso%20Coding/Projetos/aloha-project-dcca/images/sale-category.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .section-category p:nth-child(5){
-    background-image: url("../images/bags-category.jpg");
+    background-image: url("images/bags-category.jpg"),
+    url("file:///Users/danielandrade/Documents/Curso%20Coding/Projetos/aloha-project-dcca/images/bags-category.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .section-category p:nth-child(6){
     width: 50%;
-    background-image: url("../images/womens-category.jpg");
+    background-image: url("images/womens-category.jpg"),
+    url("file:///Users/danielandrade/Documents/Curso%20Coding/Projetos/aloha-project-dcca/images/womens-category.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -242,7 +235,7 @@ a{
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .section-cards .card:hover{
@@ -262,7 +255,8 @@ a{
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    background: url("../images/wave-bkgd.jpg");
+    background: url("/images/wave-bkgd.jpg"),
+    url("file:///Users/danielandrade/Documents/Curso%20Coding/Projetos/aloha-project-dcca/images/wave-bkgd.jpg");
     background-size: cover;
     /* background-position-y: center; */
     background-position: bottom;
