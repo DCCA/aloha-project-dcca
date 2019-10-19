@@ -1,566 +1,590 @@
-main{
-    min-width: 375px;
-    max-width: 1240px;
-    height: auto;
-    margin: 0 auto;
-    font-size: 16px;
-    font-family: "Raleway";
-    color: #2d2d2d;
+main {
+	min-width: 375px;
+	max-width: 1240px;
+	height: auto;
+	margin: 0 auto;
+	font-size: 16px;
+	font-family: "Raleway";
+	color: #2d2d2d;
 }
 
-h1, h2{
-    font-family: "Playfair Display";
+h1,
+h2 {
+	font-family: "Playfair Display";
 }
 
-h1{
-    font-size: 2em;
+h1 {
+	font-size: 2em;
 }
 
-h2{
-    font-size: 2em;
+h2 {
+	font-size: 2em;
 }
 
-p{
-    line-height: 200%;
+p {
+	line-height: 200%;
 }
 
-.italic{
-    font-style: italic;
+.italic {
+	font-style: italic;
 }
 
-.bold{
-    font-weight: bold;
+.bold {
+	font-weight: bold;
 }
 
 .layer {
-    background-color: rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
+
 
 /* Top Menu */
-nav{
-    /* height: 10em; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+
+nav {
+	/* height: 10em; */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
-nav ul{
-    order: 3;
-    width: 100%;
-    margin: 0 3%;
-    padding: 4%;
-    font-size: 0.8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    border-top: 0.04em solid #d3d3d3;
+nav ul {
+	order: 3;
+	width: 100%;
+	margin: 0 3%;
+	padding: 4%;
+	font-size: 0.8rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	border-top: 0.04em solid #d3d3d3;
 }
 
-nav li{
-    float: left;
-    text-transform: uppercase;
-    font-weight: bold;
+nav li {
+	float: left;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
-#logo{
-    height: 3em;
-    /* width: 25%; */
-    margin: 3%;
+.logo {
+	height: 3em;
+	/* width: 25%; */
+	margin: 3%;
 }
 
-a{
-    text-align: center;
-    color: #e2574c;
-    text-decoration: none;
+a {
+	text-align: center;
+	color: #e2574c;
+	text-decoration: none;
 }
 
-.shopping-cart{
-    height: 3em;
-    margin: 3%;
+.shopping-cart {
+	height: 3em;
+	margin: 3%;
 }
+
 
 /* First Section - Banner Girl */
-.section-banner-girl{
-    background-image: url("../images/flower-bkgd.jpg");
-    background-size: cover;
-    height: 20em;
-    display: flex;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+
+.section-banner-girl {
+	background-image: url("../images/flower-bkgd.jpg");
+	background-size: cover;
+	height: 20em;
+	display: flex;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+	position: relative;
 }
 
-.text-banner{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;  
-    text-align: center; 
+.text-banner {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
 
-.banner-girl{
-    height: 90%;
-    align-self: flex-end;
+.banner-girl {
+	height: 90%;
+	align-self: flex-end;
 }
 
-.text-banner p, h1{
-    color: white;
-    z-index: 1;
+.text-banner p,
+h1 {
+	color: white;
+	z-index: 1;
 }
 
-.text-banner p{
-    font-size: 1em;
+.text-banner p {
+	font-size: 1em;
 }
 
-.text-banner h1{
-    font-family: "Playfair Display";
-    word-wrap: break-word;
-    width: 80%;
+.text-banner h1 {
+	font-family: "Playfair Display";
+	word-wrap: break-word;
+	width: 80%;
 }
+
 
 /* Second section */
-.section-first-call{
-    height: 16em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
+
+.section-first-call {
+	height: 16em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-.section-first-call h2{
-    margin-bottom: 5%;
+.section-first-call h2 {
+	margin-bottom: 5%;
 }
 
-.section-first-call p{
-    max-width: 80%;
-    word-wrap: break-word;
-    text-align: center;
-    font-size: 0.8em;
+.section-first-call p {
+	max-width: 80%;
+	word-wrap: break-word;
+	text-align: center;
+	font-size: 0.8em;
 }
+
 
 /* Third section */
-.section-category{
-    height: 24em;
-    display: flex;
-    align-items: stretch;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-flow: row wrap;
-    text-align: center;
-    font-size: 2em;
-    text-transform: uppercase;
-    color: white;
+
+.section-category {
+	height: 24em;
+	display: flex;
+	flex-direction: row;
+	font-size: 2em;
+	text-transform: uppercase;
+	color: white;
+	position: relative;
 }
 
-.section-category p{
-    display: flex;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    border: 0.1em solid white;
-    font-size: 0.7em;
+.section-category-content {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	flex-wrap: wrap;
+	height: 100%;
 }
 
-.section-category p:nth-child(1){
-    width: 100%;
-    background-image: url("../images/mens-category.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+.section-category h2 {
+	font-family: "Raleway";
+	display: flex;
+	width: 50%;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	border: 0.1em solid white;
+	font-size: 0.7em;
 }
 
-.section-category p:nth-child(2){
-    background-image: url("../images/trends-category.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+.section-category h2:nth-child(1) {
+	width: 100%;
+	background-image: url("../images/mens-category.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-.section-category p:nth-child(3){
-    background-image: url("../images/glasses-category.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+.section-category h2:nth-child(2) {
+	background-image: url("../images/trends-category.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-.section-category p:nth-child(4){
-    background-image: url("../images/sale-category.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+.section-category h2:nth-child(3) {
+	background-image: url("../images/glasses-category.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-.section-category p:nth-child(5){
-    background-image: url("../images/bags-category.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+.section-category h2:nth-child(4) {
+	background-image: url("../images/sale-category.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-.section-category p:nth-child(6){
-    width: 100%;
-    background-image: url("../images/womens-category.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+.section-category h2:nth-child(5) {
+	background-image: url("../images/bags-category.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
+
+.section-category h2:nth-child(6) {
+	width: 100%;
+	background-image: url("../images/womens-category.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 
 /* Card Section */
-.section-cards{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+
+.section-cards {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
 
-.section-cards h2{
-    margin: 1.1em 1em;
-    font-family: "Playfair Display";
+.section-cards h2 {
+	margin: 1.1em 1em;
+	font-family: "Playfair Display";
 }
 
-.section-cards .carousel{
-    margin-bottom: 2em;
+.section-cards .carousel {
+	margin-bottom: 2em;
 }
 
-.section-cards .carousel .card-container{
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: flex-start;
+.section-cards .carousel .card-container {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: flex-start;
 }
 
-.section-cards .card{
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
+.section-cards .card {
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
 }
 
-.card p{
-    text-transform: uppercase;
-    color: #969696;
-    font-size: 0.6em;
-    margin: 1em 0;
+.card p {
+	text-transform: uppercase;
+	color: #969696;
+	font-size: 0.6em;
+	margin: 1em 0;
 }
 
-.card h3{
-    color: #e2574c;
-    font-size: 1.2em;
-    font-family: "Playfar DIsplay";
+.card h3 {
+	color: #e2574c;
+	font-size: 1.2em;
+	font-family: "Playfar DIsplay";
 }
 
-.section-cards .card:hover{
-    background-color: aqua;
-    box-sizing: border-box;
-    border: solid aqua;  
+.section-cards .card:hover {
+	background-color: aqua;
+	box-sizing: border-box;
+	border: solid aqua;
 }
 
-.section-cards .card img{
-    width: 100%;
+.section-cards .card img {
+	width: 100%;
 }
+
 
 /* Sign Up Section */
-.section-sign-up{
-    height: 18em;
-    display: flex;
-    position: relative;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    background: url("../images/wave-bkgd.jpg");
-    background-position: bottom;
-    color: white;
+
+.section-sign-up {
+	height: 18em;
+	display: flex;
+	position: relative;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	background: url("../images/wave-bkgd.jpg");
+	background-position: bottom;
+	color: white;
 }
 
-.section-sign-up .sign-up-content{
-    display: flex;
-    position: absolute;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
+.section-sign-up .sign-up-content {
+	display: flex;
+	position: absolute;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
 }
 
-.section-sign-up h2{
-    margin-bottom: 4%;
+.section-sign-up h2 {
+	margin-bottom: 4%;
 }
 
-.section-sign-up p{
-    max-width: 98%;
-    word-wrap: break-word;
-    text-align: center;
-    font-size: 0.9em;
+.section-sign-up p {
+	max-width: 98%;
+	word-wrap: break-word;
+	text-align: center;
+	font-size: 0.9em;
 }
 
-.section-sign-up form{
-    display: flex;
-    margin-top: 2em;
-    width: 80%;
+.section-sign-up form {
+	display: flex;
+	margin-top: 2em;
+	width: 80%;
 }
 
-.section-sign-up .sign-up input{
-    border-radius: 2em;
-    border: none;
-    width: 100%;
-    font-size: 0.8em;
-    padding: 2% 2% 2% 4%;
+.section-sign-up .sign-up input {
+	border-radius: 2em;
+	border: none;
+	width: 100%;
+	font-size: 0.8em;
+	padding: 2% 26% 2% 4%;
 }
 
-input:focus{
-    outline: none;
+input:focus {
+	outline: none;
 }
 
-.section-sign-up .sign-up button{
-    border-radius: 2em;
-    font-size: 0.8em;
-    width: 30%;
-    margin-left: -26%;
-    border: solid white;
-    background-color: #e2574c;
-    color: white;
-    text-align: center;
+.section-sign-up .sign-up button {
+	border-radius: 2em;
+	font-size: 0.8em;
+	width: 30%;
+	margin-left: -26%;
+	border: solid white;
+	background-color: #e2574c;
+	color: white;
+	text-align: center;
 }
+
 
 /* Footer */
-footer{
-    height: 14em;
-    padding: 6% 2%;
-    font-size: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #242424;
-    color: white;
-    border-top: solid 0.5em white;
+
+footer {
+	height: 14em;
+	padding: 6% 2%;
+	font-size: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: #242424;
+	color: white;
+	border-top: solid 0.5em white;
 }
 
-footer ul{
-    margin-top: 4%;
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+footer ul {
+	margin-top: 4%;
+	width: 60%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
 
-footer i{
-    width: 1.2em;
+footer i {
+	width: 1.2em;
 }
 
-footer .basic-info{
-    font-family: "Playfair Display";
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+footer .basic-info {
+	font-family: "Playfair Display";
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-footer .basic-info p:nth-of-type(4){
-    color: #969696;
-    max-width: 70%;
-    word-wrap: break-word;
+footer .basic-info p:nth-of-type(4) {
+	color: #969696;
+	max-width: 70%;
+	word-wrap: break-word;
 }
 
-footer .text-social-links{
-    display: none;
+footer .text-social-links {
+	display: none;
 }
+
 
 /* Responsive */
+
+
 /* Tablet */
+
 @media only screen and (min-width: 600px) {
-    /* Header */
-    nav{
-        flex-wrap: nowrap;
-    }
-    nav ul{
-        order: 2;
-        border-top: none;
-        width: 100%;
-        font-size: 1em;
-    }
-    #logo{
-        order: 1;
-    }
-    .shopping-cart{
-        order: 3;
-    }
-    /* First Section - Banner Girl */
-    .section-banner-girl{
-        height: 34em;
-    }
-    .text-banner {
-        font-size: 1.8em;
-    }
-    .text-banner h1{
-        width: auto;
-    }
-    /* Second section */
-    .section-first-call{
-        height: 24em;
-    }
-    .section-first-call h2{
-        font-size: 3em;
-        max-width: 95%;
-    }
-    
-    .section-first-call p{
-        font-size: 1.6em;
-    }
-    /* Third section */
-    .section-category{
-        height: 14em;
-    }
+	/* Header */
+	nav {
+		flex-wrap: nowrap;
+	}
+	nav ul {
+		order: 2;
+		border-top: none;
+		width: 100%;
+		font-size: 1em;
+	}
+	.logo {
+		order: 1;
+	}
+	.shopping-cart {
+		order: 3;
+	}
+	/* First Section - Banner Girl */
+	.section-banner-girl {
+		height: 34em;
+	}
+	.text-banner {
+		font-size: 1.8em;
+	}
+	.text-banner h1 {
+		width: auto;
+	}
+	/* Second section */
+	.section-first-call {
+		height: 24em;
+	}
+	.section-first-call h2 {
+		font-size: 3em;
+		max-width: 95%;
+	}
+	.section-first-call p {
+		font-size: 1.6em;
+	}
+	/* Third section */
+	.section-category {
+		height: 14em;
+	}
+	.section-category h2 {
+		width: 25%;
+		font-size: 1.2em;
+	}
+	.section-category h2:nth-child(1) {
+		width: 50%;
+	}
+	.section-category h2:nth-child(6) {
+		width: 50%;
+	}
+	/* Card Section */
+	.section-cards h2 {
+		margin: 1.4em 1.2em;
+		font-size: 3.6em;
+	}
+	.card p {
+		font-size: 1.4em;
+	}
+	.card h3 {
+		font-size: 2.6em;
+		word-wrap: break-word;
+		width: 80%;
+	}
+	/* Sign Up Section */
+	.section-sign-up {
+		height: 30em;
+		padding-block-start: 2em;
+		padding-block-end: 2em;
+	}
+	.section-sign-up h2 {
+		font-size: 3.6em;
+	}
+	.section-sign-up p {
+		font-size: 1.6em;
+		max-width: 90%;
+	}
+	.section-sign-up form {
+		width: 70%;
+	}
+	.section-sign-up .sign-up input {
+		font-size: 1.8em;
+	}
+	.section-sign-up .sign-up button {
+		font-size: 1.8em;
+	}
+	/* Footer */
+	footer {
+		font-size: 1.4em;
+		flex-direction: row;
+		text-align: left;
+		justify-content: space-between;
+	}
+	footer ul {
+		margin-top: 0;
+		margin-right: 4%;
+		height: 70%;
+		flex-direction: column;
+		width: auto;
+		justify-content: space-between;
+	}
+	footer i {
+		width: 1.8em;
+	}
+	footer li {
+		display: flex;
+		flex-direction: row;
+	}
+	footer .basic-info {
+		align-items: flex-start;
+		height: 80%;
+	}
+	footer .text-social-links {
+		display: block;
+	}
+}
 
-    .section-category p{
-        width: 25%;
-        font-size: 1.2em;
-    }
-    .section-category p:nth-child(1){
-        width: 50%;
-    }
-    .section-category p:nth-child(6){
-        width: 50%;
-    }
-    /* Card Section */
-    .section-cards h2{
-        margin: 1.4em 1.2em;
-        font-size: 3.6em;
-    }
-    .card p{
-        font-size: 1.4em;
-    }
-    .card h3{
-        font-size: 2.6em;
-        word-wrap: break-word;
-        width: 80%;
-    }
-    /* Sign Up Section */
-    .section-sign-up{
-        height: 30em;
-        padding-block-start: 2em;
-        padding-block-end: 2em;
-        
-    }
-    .section-sign-up h2{
-        font-size: 3.6em;
-    }
-    .section-sign-up p{
-        font-size: 1.6em;
-        max-width: 90%;
-    }
-    .section-sign-up form{
-        width: 70%;
-    }
-    .section-sign-up .sign-up input{
-        font-size: 1.8em;
-    }
-    .section-sign-up .sign-up button{
-        font-size: 1.8em;
-    }
-    /* Footer */
-    footer{
-        font-size: 1.4em;
-        flex-direction: row;
-        text-align: left;
-        justify-content: space-between;
 
-    }
-    footer ul{
-        margin-top: 0;
-        margin-right: 4%;
-        height: 70%;
-        flex-direction: column;
-        width: auto;
-        justify-content: space-between;
-    }
-    footer i{
-        width: 1.8em;
-    }
-    footer li{
-        display: flex;
-        flex-direction: row;
-    }
-    footer .basic-info{
-        align-items: flex-start;
-        height: 80%;
-    }
-    footer .text-social-links{
-        display: block;
-    }
-  }
+/* Desktop */
 
-  /* Desktop */
-  @media only screen and (min-width: 1240px){
-    /* Header */
-    nav ul{
-        margin: 0 18%;
-    }
-    #logo{
-        height: 4em;
-    }
-    .shopping-cart{
-        height: 4em;
-    }
-    /* First Section - Banner Girl */
-    /* Nothing to change */
-
-    /* Second section */
-    .section-first-call h2{
-        font-size: 2.6em;
-    }
-    .section-first-call p{
-        font-size: 1.2em;
-        max-width: 60%;
-    }
-    /* Third section */
-    .section-category{
-        height: 20em;
-    }
-    /* Card Section */
-    .section-cards h2{
-        font-size: 2.6em;
-    }
-    .card p{
-        font-size: 0.8em;
-    }
-    .card h3{
-        font-size: 1.8em;
-        width: 90%;
-    }
-    /* Sign Up Section */
-    .section-sign-up{
-        height: 22em;
-        padding-block-start: 1em;
-        padding-block-end: 1em;   
-    }
-    .section-sign-up h2{
-        font-size: 2.6em;
-    }
-    .section-sign-up p{
-        font-size: 1.2em;
-        max-width: 60%;
-    }
-    .section-sign-up form{
-        width: 40%;
-    }
-    .section-sign-up .sign-up input{
-        font-size: 1.2em
-    }
-    .section-sign-up .sign-up button{
-        font-size: 1.2em;
-    }
-    /* Footer */
-    footer{
-        font-size: 0.8em;
-    }
-    footer ul{
-        margin-right: 6%;
-    }
-    footer .basic-info p:nth-of-type(3){
-        margin: 15px auto;
-    }
-  }
+@media only screen and (min-width: 1240px) {
+	/* Header */
+	nav ul {
+		margin: 0 18%;
+	}
+	.logo {
+		height: 4em;
+	}
+	.shopping-cart {
+		height: 4em;
+	}
+	/* First Section - Banner Girl */
+	/* Nothing to change */
+	/* Second section */
+	.section-first-call h2 {
+		font-size: 2.6em;
+	}
+	.section-first-call p {
+		font-size: 1.2em;
+		max-width: 60%;
+	}
+	/* Third section */
+	.section-category {
+		height: 20em;
+	}
+	/* Card Section */
+	.section-cards h2 {
+		font-size: 2.6em;
+	}
+	.card p {
+		font-size: 0.8em;
+	}
+	.card h3 {
+		font-size: 1.8em;
+		width: 90%;
+	}
+	/* Sign Up Section */
+	.section-sign-up {
+		height: 22em;
+		padding-block-start: 1em;
+		padding-block-end: 1em;
+	}
+	.section-sign-up h2 {
+		font-size: 2.6em;
+	}
+	.section-sign-up p {
+		font-size: 1.2em;
+		max-width: 60%;
+	}
+	.section-sign-up form {
+		width: 40%;
+	}
+	.section-sign-up .sign-up input {
+		font-size: 1.2em
+	}
+	.section-sign-up .sign-up button {
+		font-size: 1.2em;
+	}
+	/* Footer */
+	footer {
+		font-size: 0.8em;
+	}
+	footer ul {
+		margin-right: 6%;
+	}
+	footer .basic-info p:nth-of-type(3) {
+		margin: 15px auto;
+	}
+}
