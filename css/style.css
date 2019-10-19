@@ -10,7 +10,7 @@ main {
 
 h1,
 h2 {
-	font-family: "Playfair Display";
+    font-family: "Playfair Display";
 }
 
 h1 {
@@ -92,13 +92,13 @@ a {
 /* First Section - Banner Girl */
 
 .section-banner-girl {
-	background-image: url("../images/flower-bkgd.jpg");
+    background-image: 
+        url("../images/flower-bkgd.jpg");
 	background-size: cover;
 	height: 20em;
 	display: flex;
-	overflow: hidden;
 	align-items: center;
-	justify-content: center;
+	justify-content: center; 
 	position: relative;
 }
 
@@ -123,13 +123,15 @@ h1 {
 }
 
 .text-banner p {
-	font-size: 1em;
+    font-size: 1em;
+    text-shadow: 1px 1px 2px lightslategrey;
 }
 
 .text-banner h1 {
 	font-family: "Playfair Display";
 	word-wrap: break-word;
-	width: 80%;
+    width: 80%;
+    text-shadow: 1px 1px 2px lightslategrey;
 }
 
 
@@ -184,43 +186,60 @@ h1 {
 	justify-content: center;
 	box-sizing: border-box;
 	border: 0.1em solid white;
-	font-size: 0.7em;
+    font-size: 0.7em;
+    text-shadow: 1px 1px 2px lightslategrey;
+}
+
+.category-text{
+    position: absolute;
 }
 
 .section-category h2:nth-child(1) {
 	width: 100%;
-	background-image: url("../images/mens-category.jpg");
+    background-image:
+        linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("../images/mens-category.jpg");
 	background-size: cover;
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
 }
 
 .section-category h2:nth-child(2) {
-	background-image: url("../images/trends-category.jpg");
+    background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("../images/trends-category.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .section-category h2:nth-child(3) {
-	background-image: url("../images/glasses-category.jpg");
+    background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("../images/glasses-category.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .section-category h2:nth-child(4) {
-	background-image: url("../images/sale-category.jpg");
+    background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("../images/sale-category.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .section-category h2:nth-child(5) {
-	background-image: url("../images/bags-category.jpg");
+    background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("../images/bags-category.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .section-category h2:nth-child(6) {
 	width: 100%;
-	background-image: url("../images/womens-category.jpg");
+    background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("../images/womens-category.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -292,8 +311,10 @@ h1 {
 	position: relative;
 	flex-flow: column;
 	align-items: center;
-	justify-content: center;
-	background: url("../images/wave-bkgd.jpg");
+    justify-content: center;
+    background: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("../images/wave-bkgd.jpg");
 	background-position: bottom;
 	color: white;
 }
@@ -307,7 +328,8 @@ h1 {
 }
 
 .section-sign-up h2 {
-	margin-bottom: 4%;
+    margin-bottom: 4%;
+    text-shadow: 1px 1px 2px lightslategrey;
 }
 
 .section-sign-up p {
