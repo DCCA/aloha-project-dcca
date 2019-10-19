@@ -1,7 +1,7 @@
 main{
     min-width: 375px;
     max-width: 1240px;
-    height: 3030px;
+    height: auto;
     margin: 0 auto;
     font-size: 16px;
     font-family: "Raleway";
@@ -13,15 +13,15 @@ h1, h2{
 }
 
 h1{
-    font-size: 80px;
+    font-size: 2em;
 }
 
 h2{
-    font-size: 40px;
+    font-size: 2em;
 }
 
 p{
-    line-height: 160%;
+    line-height: 200%;
 }
 
 .italic{
@@ -32,10 +32,18 @@ p{
     font-weight: bold;
 }
 
+.layer {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 /* Top Menu */
 nav{
-    height: 5%;
+    /* height: 10em; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,26 +53,26 @@ nav{
 nav ul{
     order: 3;
     width: 100%;
-    border-top: 0.5rem black;
-    margin: 0 8%;
+    margin: 0 3%;
+    padding: 4%;
     font-size: 0.8rem;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
     flex-wrap: nowrap;
+    border-top: 0.04em solid #d3d3d3;
 }
 
 nav li{
     float: left;
-    /* width: 25%; */
     text-transform: uppercase;
     font-weight: bold;
 }
 
 #logo{
-    height: 40%;
-    width: 25%;
-    margin-left: 8%;
+    height: 3em;
+    /* width: 25%; */
+    margin: 3%;
 }
 
 a{
@@ -74,29 +82,20 @@ a{
 }
 
 .shopping-cart{
-    height: 40%;
-    width: 20%;
-    margin-right: 5%;
+    height: 3em;
+    margin: 3%;
 }
 
 /* First Section - Banner Girl */
 .section-banner-girl{
     background-image: url("../images/flower-bkgd.jpg");
-    height: 20%;
+    background-size: cover;
+    height: 20em;
     display: flex;
     overflow: hidden;
     align-items: center;
     justify-content: center;
     position: relative;
-}
-
-.layer {
-    background-color: rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
 
 .text-banner{
@@ -119,59 +118,62 @@ a{
 }
 
 .text-banner p{
-    font-size: 30px;
+    font-size: 1em;
 }
 
 .text-banner h1{
     font-family: "Playfair Display";
+    word-wrap: break-word;
+    width: 80%;
 }
 
+/* Second section */
 .section-first-call{
-    height: 9%;
+    height: 16em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; 
 }
 
-/* Second section */
 .section-first-call h2{
-    margin-bottom: 2%;
+    margin-bottom: 5%;
 }
 
 .section-first-call p{
-    max-width: 50%;
+    max-width: 80%;
     word-wrap: break-word;
     text-align: center;
+    font-size: 0.8em;
 }
 
 /* Third section */
 .section-category{
-    height: 20%;
+    height: 24em;
     display: flex;
     align-items: stretch;
     flex-direction: row;
     flex-wrap: wrap;
     flex-flow: row wrap;
     text-align: center;
-    font-size: 30px;
+    font-size: 2em;
     text-transform: uppercase;
     color: white;
 }
 
 .section-category p{
     display: flex;
-    width: 25%;
+    width: 50%;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    border: 4px solid white;
-    border-radius: 2px;
-    font-weight: bold;
+    border: 0.1em solid white;
+    font-size: 0.7em;
+    /* font-weight: bold; */
 }
 
 .section-category p:nth-child(1){
-    width: 50%;
+    width: 100%;
     background-image: url("../images/mens-category.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -202,7 +204,7 @@ a{
 }
 
 .section-category p:nth-child(6){
-    width: 50%;
+    width: 100%;
     background-image: url("../images/womens-category.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -210,30 +212,28 @@ a{
 
 /* Card Section */
 .section-cards{
-    height: 22%;
+    /* height: 22em; */
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .section-cards h2{
-    margin-bottom: 40px;
-    /* font-size: 30px; */
+    margin: 1.1em 1em;
     font-family: "Playfair Display";
 }
 
 .section-cards .carousel{
-    position: relative;
+    margin-bottom: 2em;
 }
 
 .section-cards .carousel .card-container{
-    width: 200%;
     display: flex;
     flex-flow: row;
     align-items: center;
     justify-content: flex-start;
-    /* Use Align-self for this. Is better */
 }
 
 .section-cards .card{
@@ -242,7 +242,18 @@ a{
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    /* overflow: hidden; */
+}
+
+.card p{
+    text-transform: uppercase;
+    color: #969696;
+    font-size: 0.6em;
+    margin: 1em 0;
+}
+
+.card h3{
+    color: #e2574c;
+    font-size: 1.2em;
 }
 
 .section-cards .card:hover{
@@ -257,38 +268,48 @@ a{
 
 /* Sign Up Section */
 .section-sign-up{
-    height: 17%;
+    height: 18em;
     display: flex;
+    position: relative;
     flex-flow: column;
     align-items: center;
     justify-content: center;
     background: url("../images/wave-bkgd.jpg");
-    background-size: cover;
-    /* background-position-y: center; */
+    /* background-size: cover; */
     background-position: bottom;
+    color: white;
+}
+
+.section-sign-up .sign-up-content{
+    display: flex;
+    position: absolute;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .section-sign-up h2{
-    margin-bottom: 20px;
+    margin-bottom: 4%;
 }
 
 .section-sign-up p{
-    max-width: 50%;
+    max-width: 98%;
     word-wrap: break-word;
     text-align: center;
+    font-size: 0.9em;
 }
 
 .section-sign-up form{
     display: flex;
-    margin-top: 20px;
-    width: 40%;
+    margin-top: 2em;
+    width: 80%;
 }
 
 .section-sign-up .sign-up input{
-    border-radius: 30px;
+    border-radius: 2em;
     border: none;
     width: 100%;
-    font-size: 20px;
+    font-size: 0.8em;
     padding: 2% 2% 2% 4%;
 }
 
@@ -297,8 +318,8 @@ input:focus{
 }
 
 .section-sign-up .sign-up button{
-    border-radius: 30px;
-    font-size: 20px;
+    border-radius: 2em;
+    font-size: 0.8em;
     width: 30%;
     margin-left: -26%;
     border: solid white;
@@ -309,37 +330,46 @@ input:focus{
 
 /* Footer */
 footer{
-    height: 200px;
-    padding: 5% 5%;
+    height: 14em;
+    padding: 6% 2%;
+    font-size: 1em;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     background-color: #242424;
     color: white;
+    border-top: solid 0.5em white;
 }
 
 footer ul{
+    margin-top: 4%;
+    width: 60%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
 }
 
 footer i{
-    width: 20px;
+    width: 1.2em;
 }
 
 footer .basic-info{
     font-family: "Playfair Display";
-}
-
-footer .basic-info p:nth-of-type(3){
-    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer .basic-info p:nth-of-type(4){
     color: #969696;
-    max-width: 200px;
+    max-width: 70%;
     word-wrap: break-word;
+}
+
+footer .text-social-links{
+    display: none;
 }
 
 /* Responsividade */
