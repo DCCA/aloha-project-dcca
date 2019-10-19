@@ -369,7 +369,7 @@ footer .text-social-links{
     display: none;
 }
 
-/* Responsividade */
+/* Responsive */
 /* Tablet */
 @media only screen and (min-width: 600px) {
     /* Header */
@@ -494,3 +494,73 @@ footer .text-social-links{
   }
 
   /* Desktop */
+  @media only screen and (min-width: 1240px){
+    /* Header */
+    nav ul{
+        margin: 0 18%;
+    }
+    #logo{
+        height: 4em;
+    }
+    .shopping-cart{
+        height: 4em;
+    }
+    /* First Section - Banner Girl */
+    /* Nothing to change */
+
+    /* Second section */
+    .section-first-call h2{
+        font-size: 2.6em;
+    }
+    .section-first-call p{
+        font-size: 1.2em;
+        max-width: 60%;
+    }
+    /* Third section */
+    .section-category{
+        height: 20em;
+    }
+    /* Card Section */
+    .section-cards h2{
+        font-size: 2.6em;
+    }
+    .card p{
+        font-size: 0.8em;
+    }
+    .card h3{
+        font-size: 1.8em;
+        width: 90%;
+    }
+    /* Sign Up Section */
+    .section-sign-up{
+        height: 22em;
+        padding-block-start: 1em;
+        padding-block-end: 1em;   
+    }
+    .section-sign-up h2{
+        font-size: 2.6em;
+    }
+    .section-sign-up p{
+        font-size: 1.2em;
+        max-width: 60%;
+    }
+    .section-sign-up form{
+        width: 40%;
+    }
+    .section-sign-up .sign-up input{
+        font-size: 1.2em
+    }
+    .section-sign-up .sign-up button{
+        font-size: 1.2em;
+    }
+    /* Footer */
+    footer{
+        font-size: 0.8em;
+    }
+    footer ul{
+        margin-right: 6%;
+    }
+    footer .basic-info p:nth-of-type(3){
+        margin: 15px auto;
+    }
+  }
