@@ -59,7 +59,6 @@ nav ul{
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    flex-wrap: nowrap;
     border-top: 0.04em solid #d3d3d3;
 }
 
@@ -169,7 +168,6 @@ a{
     box-sizing: border-box;
     border: 0.1em solid white;
     font-size: 0.7em;
-    /* font-weight: bold; */
 }
 
 .section-category p:nth-child(1){
@@ -212,7 +210,6 @@ a{
 
 /* Card Section */
 .section-cards{
-    /* height: 22em; */
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -254,6 +251,7 @@ a{
 .card h3{
     color: #e2574c;
     font-size: 1.2em;
+    font-family: "Playfar DIsplay";
 }
 
 .section-cards .card:hover{
@@ -275,7 +273,6 @@ a{
     align-items: center;
     justify-content: center;
     background: url("../images/wave-bkgd.jpg");
-    /* background-size: cover; */
     background-position: bottom;
     color: white;
 }
@@ -373,14 +370,127 @@ footer .text-social-links{
 }
 
 /* Responsividade */
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: ;
+/* Tablet */
+@media only screen and (min-width: 600px) {
+    /* Header */
+    nav{
+        flex-wrap: nowrap;
+    }
+    nav ul{
+        order: 2;
+        border-top: none;
+        width: 100%;
+        font-size: 1em;
+    }
+    #logo{
+        order: 1;
+    }
+    .shopping-cart{
+        order: 3;
+    }
+    /* First Section - Banner Girl */
+    .section-banner-girl{
+        height: 34em;
+    }
+    .text-banner {
+        font-size: 1.8em;
+    }
+    .text-banner h1{
+        width: auto;
+    }
+    /* Second section */
+    .section-first-call{
+        height: 24em;
+    }
+    .section-first-call h2{
+        font-size: 3em;
+        max-width: 95%;
+    }
+    
+    .section-first-call p{
+        font-size: 1.6em;
+    }
+    /* Third section */
+    .section-category{
+        height: 14em;
+    }
+
+    .section-category p{
+        width: 25%;
+        font-size: 1.2em;
+    }
+    .section-category p:nth-child(1){
+        width: 50%;
+    }
+    .section-category p:nth-child(6){
+        width: 50%;
+    }
+    /* Card Section */
+    .section-cards h2{
+        margin: 1.4em 1.2em;
+        font-size: 3.6em;
+    }
+    .card p{
+        font-size: 1.4em;
+    }
+    .card h3{
+        font-size: 2.6em;
+        word-wrap: break-word;
+        width: 80%;
+    }
+    /* Sign Up Section */
+    .section-sign-up{
+        height: 30em;
+        padding-block-start: 2em;
+        padding-block-end: 2em;
+        
+    }
+    .section-sign-up h2{
+        font-size: 3.6em;
+    }
+    .section-sign-up p{
+        font-size: 1.6em;
+        max-width: 90%;
+    }
+    .section-sign-up form{
+        width: 70%;
+    }
+    .section-sign-up .sign-up input{
+        font-size: 1.8em;
+    }
+    .section-sign-up .sign-up button{
+        font-size: 1.8em;
+    }
+    /* Footer */
+    footer{
+        font-size: 1.4em;
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+
+    }
+    footer ul{
+        margin-top: 0;
+        margin-right: 4%;
+        height: 70%;
+        flex-direction: column;
+        width: auto;
+        justify-content: space-between;
+    }
+    footer i{
+        width: 1.8em;
+    }
+    footer li{
+        display: flex;
+        flex-direction: row;
+    }
+    footer .basic-info{
+        align-items: flex-start;
+        height: 80%;
+    }
+    footer .text-social-links{
+        display: block;
     }
   }
 
-@media only screen and (min-width: 600px) {
-    body {
-      background-color: ;
-    }
-  }
+  /* Desktop */
