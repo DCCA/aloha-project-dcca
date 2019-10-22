@@ -1,3 +1,5 @@
+/* Main CSS */
+
 main {
 	min-width: 375px;
 	max-width: 1240px;
@@ -248,10 +250,10 @@ h1 {
 /* Card Section */
 
 .section-cards {
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-	justify-content: center;
+	/* display: flex; */
+	/* flex-flow: column; */
+	/* align-items: center;
+	justify-content: center; */
 	text-align: center;
 }
 
@@ -260,19 +262,30 @@ h1 {
 	font-family: "Playfair Display";
 }
 
-.section-cards .carousel {
-	margin-bottom: 2em;
+.carousel-cell {
+    width: 100%; /* full width */
+    height: auto;
+  }
+
+.section-cards .flickity-page-dots{
+    position: unset;
+    margin-bottom: 2em;
+}
+
+/* .section-cards .carousel {
+    margin-bottom: 2em;
+    overflow: hidden;
 }
 
 .section-cards .carousel .card-container {
-	display: flex;
-	flex-flow: row;
-	align-items: center;
-	justify-content: flex-start;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    transform-style: preserve-3d;
 }
-
+*/
 .section-cards .card {
-	width: 100%;
+    width: 100%;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -292,6 +305,7 @@ h1 {
 	font-family: "Playfar DIsplay";
 }
 
+/*
 .section-cards .card:hover {
 	background-color: aqua;
 	box-sizing: border-box;
@@ -300,7 +314,7 @@ h1 {
 
 .section-cards .card img {
 	width: 100%;
-}
+} */
 
 
 /* Sign Up Section */
@@ -476,7 +490,11 @@ footer .text-social-links {
 	.section-cards h2 {
 		margin: 1.4em 1.2em;
 		font-size: 3.6em;
-	}
+    }
+    .carousel-cell {
+        width: 50%;
+        height: auto;
+    }
 	.card p {
 		font-size: 1.4em;
 	}
@@ -569,7 +587,11 @@ footer .text-social-links {
 	/* Card Section */
 	.section-cards h2 {
 		font-size: 2.6em;
-	}
+    }
+    .carousel-cell {
+        width: 25%;
+        height: auto;
+    }
 	.card p {
 		font-size: 0.8em;
 	}
