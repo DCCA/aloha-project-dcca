@@ -1,5 +1,4 @@
 /* Main CSS */
-
 main {
 	min-width: 375px;
 	max-width: 1240px;
@@ -136,7 +135,6 @@ h1 {
     text-shadow: 1px 1px 2px lightslategrey;
 }
 
-
 /* Second section */
 
 .section-first-call {
@@ -272,18 +270,6 @@ h1 {
     margin-bottom: 2em;
 }
 
-/* .section-cards .carousel {
-    margin-bottom: 2em;
-    overflow: hidden;
-}
-
-.section-cards .carousel .card-container {
-    position: relative;
-    align-items: center;
-    overflow: hidden;
-    transform-style: preserve-3d;
-}
-*/
 .section-cards .card {
     width: 100%;
 	display: flex;
@@ -295,27 +281,23 @@ h1 {
 .card p {
 	text-transform: uppercase;
 	color: #969696;
-	font-size: 0.6em;
+	font-size: 0.8em;
 	margin: 1em 0;
 }
 
 .card h3 {
 	color: #e2574c;
-	font-size: 1.2em;
+	font-size: 1.4em;
 	font-family: "Playfar DIsplay";
 }
 
-/*
-.section-cards .card:hover {
-	background-color: aqua;
-	box-sizing: border-box;
-	border: solid aqua;
+.card .add-to-cart{
+    background: #242424;
+    color: white;
+    border-color: #242424;
+    border-radius: 15em;
+    margin-bottom: 1em;
 }
-
-.section-cards .card img {
-	width: 100%;
-} */
-
 
 /* Sign Up Section */
 
@@ -373,9 +355,9 @@ input:focus {
 
 .section-sign-up .sign-up button {
 	border-radius: 2em;
-	font-size: 0.8em;
+	font-size: 0.6em;
 	width: 30%;
-	margin-left: -26%;
+	margin-left: -20%;
 	border: solid white;
 	background-color: #e2574c;
 	color: white;
@@ -520,10 +502,10 @@ footer .text-social-links {
 		width: 70%;
 	}
 	.section-sign-up .sign-up input {
-		font-size: 1.8em;
+		font-size: 1.6em;
 	}
 	.section-sign-up .sign-up button {
-		font-size: 1.8em;
+		font-size: 1.6em;
 	}
 	/* Footer */
 	footer {
@@ -616,10 +598,10 @@ footer .text-social-links {
 		width: 40%;
 	}
 	.section-sign-up .sign-up input {
-		font-size: 1.2em
+		font-size: 1em
 	}
 	.section-sign-up .sign-up button {
-		font-size: 1.2em;
+		font-size: 1em;
 	}
 	/* Footer */
 	footer {
