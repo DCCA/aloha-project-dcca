@@ -10,13 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // how can you get the "href" attribute value of the clicked element to create a string that corresponds the id of the correct section?
             let href = this.querySelector('a').href;
         // get the section by its id using the string from the last step
-            let sec = href.split('.html');
+            let sec = href.split('#');
         // scroll to that section with .scrollIntoView()
-            document.querySelector(sec[1]).scrollIntoView({ 
+            document.querySelector('#' + sec[1]).scrollIntoView({ 
                 behavior: 'smooth' 
             });
         });
-      
     });
 
     // for(i = 0; i < buttons.length; i++){
