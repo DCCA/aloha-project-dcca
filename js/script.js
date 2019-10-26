@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll("button");
     const navLinks = document.querySelectorAll("nav li");
+    const form = document.querySelector('#form-sign-up');
 
     //Smooth scroll
     navLinks.forEach(function(element) {
@@ -8,14 +9,22 @@ document.addEventListener('DOMContentLoaded', () => {
         element.addEventListener("click", function(event){
             event.preventDefault();
         // how can you get the "href" attribute value of the clicked element to create a string that corresponds the id of the correct section?
-            let href = this.querySelector('a').href;
-        // get the section by its id using the string from the last step
-            let sec = href.split('#');
+            let href = this.querySelector('a').hash;
         // scroll to that section with .scrollIntoView()
-            document.querySelector('#' + sec[1]).scrollIntoView({ 
+            document.querySelector(href).scrollIntoView({ 
                 behavior: 'smooth' 
             });
         });
+    });
+    // E-mail validation
+    form.addEventListener('submit', function(event){
+        event.preventDefault();
+        let email = document.getElementById('input-field').value;
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){
+            alert("Thanks for subscribing!")
+        } else{
+            alert("Please insert a valid email address.")
+        }
     });
 
     // for(i = 0; i < buttons.length; i++){
