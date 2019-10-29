@@ -83,6 +83,10 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	color: #b64036;
+}
+
 .shopping-cart {
 	height: 3em;
 	margin: 3%;
