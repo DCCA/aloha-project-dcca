@@ -1,4 +1,5 @@
 /* Main CSS */
+
 main {
 	min-width: 375px;
 	max-width: 1240px;
@@ -11,7 +12,7 @@ main {
 
 h1,
 h2 {
-    font-family: "Playfair Display";
+	font-family: "Playfair Display";
 }
 
 h1 {
@@ -91,13 +92,12 @@ a {
 /* First Section - Banner Girl */
 
 .section-banner-girl {
-    background-image: 
-        url("../images/flower-bkgd.jpg");
+	background-image: url("../images/flower-bkgd.jpg");
 	background-size: cover;
 	height: 20em;
 	display: flex;
 	align-items: center;
-	justify-content: center; 
+	justify-content: center;
 	position: relative;
 }
 
@@ -122,16 +122,17 @@ h1 {
 }
 
 .text-banner p {
-    font-size: 1em;
-    text-shadow: 1px 1px 2px lightslategrey;
+	font-size: 1em;
+	text-shadow: 1px 1px 2px lightslategrey;
 }
 
 .text-banner h1 {
 	font-family: "Playfair Display";
 	word-wrap: break-word;
-    width: 80%;
-    text-shadow: 1px 1px 2px lightslategrey;
+	width: 80%;
+	text-shadow: 1px 1px 2px lightslategrey;
 }
+
 
 /* Second section */
 
@@ -184,52 +185,40 @@ h1 {
 	justify-content: center;
 	box-sizing: border-box;
 	border: 0.1em solid white;
-    font-size: 0.7em;
-    text-shadow: 1px 1px 2px lightslategrey;
-    background-size: cover;
-    background-repeat: no-repeat;
+	font-size: 0.7em;
+	text-shadow: 1px 1px 2px lightslategrey;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-.category-text{
-    position: absolute;
+.category-text {
+	position: absolute;
 }
 
 .section-category h2:nth-child(1) {
 	width: 100%;
-    background-image:
-        linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url("../images/mens-category.jpg");
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/mens-category.jpg");
 }
 
 .section-category h2:nth-child(2) {
-    background-image: 
-        linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url("../images/trends-category.jpg");
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/trends-category.jpg");
 }
 
 .section-category h2:nth-child(3) {
-    background-image: 
-        linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url("../images/glasses-category.jpg");
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/glasses-category.jpg");
 }
 
 .section-category h2:nth-child(4) {
-    background-image: 
-        linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url("../images/sale-category.jpg");
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/sale-category.jpg");
 }
 
 .section-category h2:nth-child(5) {
-    background-image: 
-        linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url("../images/bags-category.jpg");
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/bags-category.jpg");
 }
 
 .section-category h2:nth-child(6) {
 	width: 100%;
-    background-image: 
-        linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url("../images/womens-category.jpg");
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/womens-category.jpg");
 }
 
 
@@ -245,23 +234,23 @@ h1 {
 }
 
 .carousel-cell {
-    width: 100%;
-    height: auto;
-  }
+	width: 100%;
+	height: auto;
+}
 
-.section-cards .flickity-page-dots{
-    position: unset;
-    margin: 3em auto;
+.section-cards .flickity-page-dots {
+	position: unset;
+	margin: 3em auto;
 }
 
 .section-cards .card {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
-    justify-content: center;
-    height: -web;
+	justify-content: center;
+	height: -web;
 }
 
 .card p {
@@ -277,14 +266,15 @@ h1 {
 	font-family: "Playfar DIsplay";
 }
 
-.card .add-to-cart{
-    background: #242424;
-    color: white;
-    border-color: #242424;
-    border-radius: 15em;
-    padding: 0.4em 0.8em;
-    margin-bottom: 1em;
+.card .add-to-cart {
+	background: #242424;
+	color: white;
+	border-color: #242424;
+	border-radius: 15em;
+	padding: 0.4em 0.8em;
+	margin-bottom: 1em;
 }
+
 
 /* Sign Up Section */
 
@@ -294,10 +284,8 @@ h1 {
 	position: relative;
 	flex-flow: column;
 	align-items: center;
-    justify-content: center;
-    background: 
-        linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url("../images/wave-bkgd.jpg");
+	justify-content: center;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/wave-bkgd.jpg");
 	background-position: bottom;
 	color: white;
 }
@@ -311,8 +299,8 @@ h1 {
 }
 
 .section-sign-up h2 {
-    margin-bottom: 4%;
-    text-shadow: 1px 1px 2px lightslategrey;
+	margin-bottom: 4%;
+	text-shadow: 1px 1px 2px lightslategrey;
 }
 
 .section-sign-up p {
@@ -366,6 +354,10 @@ footer {
 	background-color: #242424;
 	color: white;
 	border-top: solid 0.5em white;
+}
+
+footer a{
+    color: white;
 }
 
 footer ul {
@@ -459,11 +451,11 @@ footer .text-social-links {
 	.section-cards h2 {
 		margin: 1.4em 1.2em;
 		font-size: 3.6em;
-    }
-    .carousel-cell {
-        width: 50%;
-        height: auto;
-    }
+	}
+	.carousel-cell {
+		width: 50%;
+		height: auto;
+	}
 	.card p {
 		font-size: 1.4em;
 	}
@@ -556,11 +548,11 @@ footer .text-social-links {
 	/* Card Section */
 	.section-cards h2 {
 		font-size: 2.6em;
-    }
-    .carousel-cell {
-        width: 25%;
-        height: auto;
-    }
+	}
+	.carousel-cell {
+		width: 25%;
+		height: auto;
+	}
 	.card p {
 		font-size: 0.8em;
 	}
