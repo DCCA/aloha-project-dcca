@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const buttons = document.querySelectorAll("button");
     const navLinks = document.querySelectorAll("nav li");
     const form = document.querySelector('#form-sign-up');
+    const submitBtn = document.getElementById('submit-btn');
 
     //Smooth scroll
     navLinks.forEach(function(element) {
@@ -16,26 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
-    // E-mail validation
-    form.addEventListener('submit', function(event){
-        event.preventDefault();
-        let email = document.getElementById('input-field').value;
-        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){
-            alert("Thanks for subscribing!")
-        } else{
-            alert("Please insert a valid email address.")
-        }
-    });
-
-    // for(i = 0; i < buttons.length; i++){
-    //     buttons[i].addEventListener("click", clickCheck, false);
-    // }
-
-    // function clickCheck(){
-    //     if(this.classList.contains("add-to-cart")){
-    //         console.log("Clicked")
-    //     }
-    // }
 
     // Init carousel
     $('.main-carousel').flickity({
@@ -43,6 +23,18 @@ document.addEventListener('DOMContentLoaded', () => {
         cellAlign: 'left',
         contain: true
     });
+
+    submitBtn.addEventListener('click', checkEmail);
+
+    function checkEmail(event){
+        event.preventDefault();
+        let email = document.getElementById('input-field').value;
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){
+            alert("Thanks for subscribing!")
+        } else{
+            alert("Please insert a valid email address.")
+        }
+    }
 });
 
 
