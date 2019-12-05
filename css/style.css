@@ -79,7 +79,7 @@ nav li {
 
 a {
 	text-align: center;
-	color: #e2574c;
+	color: #da3123;
 	text-decoration: none;
 }
 
@@ -259,13 +259,13 @@ h1 {
 
 .card p {
 	text-transform: uppercase;
-	color: #969696;
+	color: #727272;
 	font-size: 0.8em;
 	margin: 1em 0;
 }
 
 .card h3 {
-	color: #e2574c;
+	color: #da3123;
 	font-size: 1.4em;
 	font-family: "Playfar DIsplay";
 }
@@ -313,7 +313,10 @@ h1 {
 	text-align: center;
 	font-size: 0.9em;
 }
-
+.section-sign-up label{
+	visibility: hidden;
+	position: absolute;
+}
 .section-sign-up form {
 	display: flex;
 	margin-top: 2em;
@@ -338,7 +341,7 @@ input:focus {
 	width: 30%;
 	margin-left: -20%;
 	border: solid white;
-	background-color: #e2574c;
+	background-color: #da3123;
 	color: white;
 	text-align: center;
 }
@@ -384,7 +387,7 @@ footer .basic-info {
 }
 
 footer .basic-info p:nth-of-type(4) {
-	color: #969696;
+	color: #949494;
 	max-width: 70%;
 	word-wrap: break-word;
 }
